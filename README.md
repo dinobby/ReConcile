@@ -1,11 +1,13 @@
 # ReConcile: Round-Table Conference Improves Reasoning via Consensus Among Diverse LLMs
-The code for ReConcile, a group-discuss-and-convince framework
+The code for ReConcile, a group-discuss-and-convince framework.
 
 [Justin Chen](https://dinobby.github.io/), [Swarnadeep Saha](https://swarnahub.github.io/), and [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
-<img width="858" alt="image" src="https://github.com/dinobby/ReConcile_bak/assets/20419883/1204ecdd-4635-4d75-8233-c00dac56b30a">
+<img width="736" alt="image" src="https://github.com/dinobby/ReConcile/assets/20419883/e1fe7c28-5d4f-4b7b-b312-d8a06b913f89">
 
-### Overview of the multi-model multi-agent discussion
-<img width="809" alt="image" src="https://github.com/dinobby/ReConcile/assets/20419883/0924a818-3abb-4406-b521-7166f9d78d0f">
+
+### Overview of the multi-round discussion
+<img width="743" alt="image" src="https://github.com/dinobby/ReConcile/assets/20419883/117470f4-bb73-4492-a31e-70978b318f54">
+
 
 # Installation
 This project is tested on Python 3.10.11. All dependencies can be installed via:
@@ -26,7 +28,12 @@ CLAUDE_COOCKIE3 = "..."
 CLAUDE_COOCKIE4 = "..."
 CLAUDE_COOCKIE5 = "..."
 ```
-If you use more than five accounts for Claude, you can put more here, and remember to edit ```claude_coockies``` in ```generation.py```
+
+We use [Claude-API](https://github.com/KoushikNavuluri/Claude-API) to get results from Claude. For more details about cookies, please refer to [Claude-API](https://github.com/KoushikNavuluri/Claude-API).
+
+If you use more than five accounts for Claude, you can put more in ```.env```
+
+Just emember to edit ```claude_coockies``` in ```generation.py```
 
 Next, run the following command to start:
 
