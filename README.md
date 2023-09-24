@@ -2,11 +2,11 @@
 The code for ReConcile, a group-discuss-and-convince framework.
 
 [Justin Chen](https://dinobby.github.io/), [Swarnadeep Saha](https://swarnahub.github.io/), and [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
-<img width="736" alt="image" src="https://github.com/dinobby/ReConcile/assets/20419883/e1fe7c28-5d4f-4b7b-b312-d8a06b913f89">
+<img width="736" alt="image" src="https://i.imgur.com/mREgiI7.png">
 
 
 ### Overview of the multi-round discussion
-<img width="743" alt="image" src="https://github.com/dinobby/ReConcile/assets/20419883/117470f4-bb73-4492-a31e-70978b318f54">
+<img width="743" alt="image" src="https://i.imgur.com/4uMumgD.png">
 
 
 # Installation
