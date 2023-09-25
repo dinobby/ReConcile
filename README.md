@@ -1,5 +1,5 @@
-# ReConcile: Round-Table Conference Improves Reasoning via Consensus Among Diverse LLMs
-The code for ReConcile, a group-discuss-and-convince framework.
+# ReConcile: A Group-Discuss-and-Convince Framework
+[ReConcile: Round-Table Conference Improves Reasoning via Consensus Among Diverse LLMs](https://arxiv.org/pdf/2309.13007.pdf)
 
 [Justin Chen](https://dinobby.github.io/), [Swarnadeep Saha](https://swarnahub.github.io/), and [Mohit Bansal](https://www.cs.unc.edu/~mbansal/)
 <img width="736" alt="image" src="https://i.imgur.com/mREgiI7.png">
@@ -55,7 +55,7 @@ The datasets used in this work are already included in the ```dataset``` folder.
 @article{chen2023reconcile,
   title={ReConcile: Round-Table Conference Improves Reasoning via Consensus Among Diverse LLMs},
   author={Chen, Justin Chih-Yao and Saha, Swarnadeep and Bansal, Mohit},
-  journal={arXiv preprint arXiv:2306.xxxxx},
+  journal={arXiv preprint arXiv:2309.13007},
   year={2023}
 }
 ```
