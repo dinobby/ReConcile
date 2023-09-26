@@ -22,18 +22,18 @@ OPEN_AI_API_BASE = "..."
 OPEN_AI_API_VERSION = "..." 
 OPEN_AI_API_KEY = "..."
 PALM_API_KEY = "..."
-CLAUDE_COOCKIE1 = "..."
-CLAUDE_COOCKIE2 = "..."
-CLAUDE_COOCKIE3 = "..."
-CLAUDE_COOCKIE4 = "..."
-CLAUDE_COOCKIE5 = "..."
+CLAUDE_COOKIE1 = "..."
+CLAUDE_COOKIE2 = "..."
+CLAUDE_COOKIE3 = "..."
+CLAUDE_COOKIE4 = "..."
+CLAUDE_COOKIE5 = "..."
 ```
 
 We use [Claude-API](https://github.com/KoushikNavuluri/Claude-API) to get results from Claude. For more details about cookies, please refer to [Claude-API](https://github.com/KoushikNavuluri/Claude-API).
 
 If you use more than five accounts for Claude, you can put more in ```.env```
 
-Just emember to edit ```claude_coockies``` in ```generation.py```
+Just emember to edit ```claude_cookies``` in ```generation.py```
 
 Next, run the following command to start:
 
