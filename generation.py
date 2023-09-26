@@ -23,24 +23,24 @@ openai.api_version = os.environ['OPEN_AI_API_VERSION']
 openai.api_key = os.environ['OPEN_AI_API_KEY']
 palm.configure(api_key=os.environ['PALM_API_KEY'])
 # Note: you can add more account in .env and here
-claude_coockies = [c for c in [os.environ['CLAUDE_COOCKIE1'], os.environ['CLAUDE_COOCKIE2'], os.environ['CLAUDE_COOCKIE3'], os.environ['CLAUDE_COOCKIE4'], os.environ['CLAUDE_COOCKIE5']] if c]
+claude_cookies = [c for c in [os.environ['CLAUDE_COOKIE1'], os.environ['CLAUDE_COOKIE2'], os.environ['CLAUDE_COOKIE3'], os.environ['CLAUDE_COOKIE4'], os.environ['CLAUDE_COOKIE5']] if c]
 
 class ClaudeModel:
     def __init__(self):
-        self.coockies = claude_coockies
+        self.cookies = claude_cookies
         self.claude_api = self.connect()
         
     @backoff.on_exception(backoff.expo, (CurlError, RequestException), max_tries=5)   
     def connect(self):
-        for coockie in self.coockies:
-            claude_api = Client(coockie)
+        for cookie in self.cookies:
+            claude_api = Client(cookie)
             uuid = claude_api.create_new_chat()['uuid']
             output = claude_api.send_message("Hi, what is your name and where are you from?", uuid)
             if output:
                 print(output)
                 print("claude connected successfully.")
                 return claude_api
-        print("all coockies are not available now.")
+        print("all cookies are not available now.")
         return None
         
     @backoff.on_exception(backoff.expo, (CurlError, RequestException, ValueError), max_tries=3)
@@ -65,7 +65,7 @@ class ClaudeModel:
                 print("-----------------------")
                 raise ValueError("incomplete JSON format.")
         else:
-            print("reconnecting claude using different coockie...")
+            print("reconnecting claude using different cookie...")
             self.claude_api = self.connect()
             if self.claude_api:
                 uuid = self.claude_api.create_new_chat()['uuid']
