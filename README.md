@@ -33,7 +33,7 @@ We use [Claude-API](https://github.com/KoushikNavuluri/Claude-API) to get result
 
 If you use more than five accounts for Claude, you can put more in ```.env```
 
-Just emember to edit ```claude_coockies``` in ```generation.py```
+Just remember to edit ```claude_coockies``` in ```generation.py```
 
 Next, run the following command to start:
 
